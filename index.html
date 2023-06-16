@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrador de Tareas</title>
+  <style>
+    .tarea {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Administrador de Tareas</h1>
+
+  <div>
+    <label for="titulo-input">Título:</label>
+    <input type="text" id="titulo-input">
+  </div>
+
+  <div>
+    <label for="descripcion-input">Descripción:</label>
+    <textarea id="descripcion-input"></textarea>
+  </div>
+
+  <div>
+    <label for="fechaLimite-input">Fecha Límite:</label>
+    <input type="date" id="fechaLimite-input">
+  </div>
+
+  <button id="add-button">Agregar Tarea</button>
+
+  <div>
+    <label for="filtro-select">Filtrar Tareas:</label>
+    <select id="filtro-select">
+      <option value="todo">Todas</option>
+      <option value="completada">Completadas</option>
+      <option value="pendiente">Pendientes</option>
+    </select>
+  </div>
+
+  <div id="lista-tareas"></div>
+
+  <script src="/javascript/index.js"></script>
+</body>
+</html>
